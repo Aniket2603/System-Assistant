@@ -1,4 +1,4 @@
-This is a demo version of python(3.6) voice command based system assistant for simplyfying the day to day task.
+This is a demo version of voice based system assistant in python for simplyfying the day to day task.
 
 -------------------------------------To install required libraries------------------------------------------------------
 Before you run the program (setup files) your system should contain pyautogui python library and active internet connection.
