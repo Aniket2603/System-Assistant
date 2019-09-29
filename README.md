@@ -1,2 +1,2 @@
-# Zoya - System Assistant
+# System Assistant
  
