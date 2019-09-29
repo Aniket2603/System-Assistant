@@ -28,7 +28,7 @@ class all_outputs:
 #This method is used to manage between input resources
 #Status is parameter passed to know whether it should take input or not
 def inputs(status):
-    keyword = 'play'
+    keyword = 'zoya'
     try:
         #Default input is audio.
         query = all_inputs.listen()

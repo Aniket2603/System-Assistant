@@ -1,5 +1,4 @@
 '''This module is a controller. It manages the different functionalities of the entire system.'''
-import chat_bot
 import basic_functions
 import io_manager as io
 import sys_search as sys
@@ -58,29 +57,14 @@ def functionality_search(status, query):
 
 
 
-def office(query):
-    keyword = 'zoya'
-    if keyword in query:
-        query = query[len(keyword)+1:]
-        status = True
-    else:
-        status = False
-    return status,query
-
-
 #This method calls all the functions 
 def main():
-    #Introduce the assistant
-    #chat_bot.introduce()
-    #chat_bot.chatbot()
+    search_status = io.outputs('Hello Sir. How may I help You?', True)
 
     while(True):
         try:
             #search_status is to check whether it should be performed or not.
-            #query, search_status= io.inputs(search_status)
-            
-            query = input()
-            search_status, query = office(query)
+            query, search_status= io.inputs(search_status)
 
             print(query, search_status)
             message, search_status = functionality_search(search_status, query.lower())
